@@ -1,9 +1,8 @@
 import React from 'react'
 import Layout from '../components/layout'
-// import { RainbowProvider } from '../helpers/useRainbow'
 
 function LayoutContainer(props) {
-  return <Layout {...props} siteTitle={'QueerJS'} />
+  return <Layout {...props} siteTitle={'React Ladies'} />
 }
 
 export default LayoutContainer

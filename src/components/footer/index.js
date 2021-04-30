@@ -13,7 +13,7 @@ const Footer = () => {
         Twitter
       </a>
       <br />
-      Website 🍴'd from
+      Website 🍴'd from{' '}
       <a href="https://www.queerjs.com" title="Visit QueerJS">
         QueerJS
       </a>

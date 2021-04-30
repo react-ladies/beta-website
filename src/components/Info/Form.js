@@ -16,14 +16,14 @@ export default ({ onSubmit, city }) => {
       createRecord({
         city: city,
         name: name,
-        ghLink: gh || 'QueerJS'
+        ghLink: gh || 'react-ladies'
       })
 
       if (plusOne) {
         createRecord({
           city: city,
           name: plusOneName,
-          ghLink: plusOneGH || 'QueerJS'
+          ghLink: plusOneGH || 'react-ladies'
         })
       }
     }
@@ -39,7 +39,7 @@ export default ({ onSubmit, city }) => {
     >
       <p>
         If you're not comfortable showing your photo and link, you may leave the `GitHub Handle`
-        field blank and it will default to `QueerJS`.
+        field blank and it will default to `react-ladies`.
       </p>
       <label htmlFor="name">
         Your Name
@@ -58,12 +58,12 @@ export default ({ onSubmit, city }) => {
         <input
           id="gh"
           type="text"
-          placeholder="QueerJS"
+          placeholder="react-ladies"
           pattern="[A-Za-z0-9-]{1,30}"
           value={gh}
           onInvalid={e =>
             e.target.setCustomValidity(
-              `A GitHub handle, e.g. 'QueerJS' for 'https://github.com/queerjs'`
+              `A GitHub handle, e.g. 'react-ladies' for 'https://github.com/react-ladies'`
             )
           }
           onChange={e => setGH(e.target.value.trim())}
@@ -111,7 +111,7 @@ export default ({ onSubmit, city }) => {
             value={plusOneGH}
             onInvalid={e =>
               e.target.setCustomValidity(
-                `A GitHub handle, e.g. 'QueerJS' for 'https://github.com/queerjs'`
+                `A GitHub handle, e.g. 'react-ladies' for 'https://github.com/react-ladies'`
               )
             }
             onChange={e => setPlusOneGH(e.target.value.trim())}

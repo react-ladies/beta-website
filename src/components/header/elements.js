@@ -39,6 +39,9 @@ export const Logo = styled.img`
 
 export const LogoWrap = styled.div`
   flex-shrink: 0;
+  svg {
+    font-size: 2em;
+  }
 `
 
 export const Title = styled(Link)`

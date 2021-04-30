@@ -23,7 +23,7 @@ const IndexPage = ({ data: { allEvent } }) => {
   return (
     <Layout>
       <SEO
-        title={'QueerJS'}
+        title={'React Ladies'}
         description={'A supportive community for women and non-binary React enthusiasts'}
       />
       <Panel>
@@ -74,9 +74,9 @@ export const query = graphql`
             icon {
               publicURL
             }
-            iconHover {
-              publicURL
-            }
+            # iconHover {
+            #   publicURL
+            # }
             hostIcon {
               publicURL
             }

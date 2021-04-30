@@ -4,12 +4,12 @@ import RainbowWithClicker from '../rainbow/RainbowWithClicker'
 import animate from 'animate.css'
 
 export const theme = {
-  darkPurple: '#1E1126',
-  contrastPurple: '#331A42',
-  white: '#FFFFFF',
-  lightGrey: '#e6e2ff',
-  lightPurple: '#EAD6F7',
-  roboto: 'Roboto Mono',
+  darkPurple: '#f3fbff',
+  contrastPurple: '#7bdff2',
+  white: '#01a7c2',
+  lightGrey: '#6445c7',
+  lightPurple: '#00178c',
+  roboto: 'Space Mono',
   neutra: 'NeutraText-Bold'
 }
 
@@ -18,7 +18,7 @@ ${otherFont}
 ${animate}
 
 body {
-  font-family: 'Roboto Mono';
+  font-family: 'Space Mono';
   background: ${props => props.theme.darkPurple};
     -webkit-font-smoothing: antialiased;
   color:  ${props => props.theme.white};

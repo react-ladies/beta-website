@@ -7,6 +7,7 @@ const DistinctiveDiv = styled.div`
   margin-bottom: 2.5rem;
   padding: 0.5rem;
   text-align: center;
+  border-radius: 10px;
 `
 
 const BoldTitle = styled.h2`
@@ -23,4 +24,4 @@ const Announcement = ({ message }) => {
   )
 }
 
-export default Announcement;
+export default Announcement

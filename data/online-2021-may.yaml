@@ -1,11 +1,11 @@
 ---
 info:
-  city: The Internet
+  city: Spring Kick Off
   link: online-2021-may
   date: 05/27/2021
-  hour: '14:30 EDT / 20:30 CEST'
+  hour: '12:00PM EST'
   icon: icons/online/online.svg
-  iconHover: icons/online/online-hover.svg
+  # iconHover: icons/online/online-hover.svg
   hostIcon: icons/online/logo_salesloft.svg
   hostName: SalesLoft
   rsvpsClosed: false
@@ -14,7 +14,7 @@ site:
   cfp: false
   location: Zoom (link via e-mail)
   googleMapsLink:
-  calendarLink: https://www.google.com/calendar/render?action=TEMPLATE&text=QueerJS+Online&details=Join+us+on+Twitch+for+your+favourite+meetup&location=The+internet&dates=20210330T183000Z%2F20210330T200000Z
+  calendarLink: https://www.google.com/calendar/render?action=TEMPLATE&text=ReactJSLadies+Online&details=Join+us+on+Twitch+for+your+favourite+meetup&location=The+internet&dates=20210330T183000Z%2F20210330T200000Z
 announcement:
   heading: React Ladies
   text: Join our community of women and non-binary React developers at our upcoming kickoff event!
@@ -39,6 +39,6 @@ sponsors:
 speakers:
   - name: Shaundai Person
     pronouns: 'she/her'
-    talk: Painting cute 2D animations with GLSL
+    talk: How to Stand Out as a Non-Traditional Applicant
     twitterLink: shaundai
     githubLink: shaundai

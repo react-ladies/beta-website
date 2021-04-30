@@ -20,40 +20,12 @@ export const Name = styled.h2`
     !props.past &&
     css`
       @supports (background-clip: text) {
-        background: linear-gradient(
-          to bottom,
-          #ff5d7d 0%,
-          #ff5d7d 16.6666666667%,
-          #ff764e 16.6666666667%,
-          #ff764e 33.3333333333%,
-          #ffc144 33.3333333333%,
-          #ffc144 50%,
-          #88df8e 50%,
-          #88df8e 66.6666666667%,
-          #00ccf2 66.6666666667%,
-          #00ccf2 83.3333333333%,
-          #b278d3 83.3333333333%,
-          #b278d3 100%
-        );
+        background: rgb(100, 69, 199);
         background-clip: text;
         color: transparent;
       }
       @supports (-webkit-background-clip: text) {
-        background: linear-gradient(
-          to bottom,
-          #ff5d7d 0%,
-          #ff5d7d 16.6666666667%,
-          #ff764e 16.6666666667%,
-          #ff764e 33.3333333333%,
-          #ffc144 33.3333333333%,
-          #ffc144 50%,
-          #88df8e 50%,
-          #88df8e 66.6666666667%,
-          #00ccf2 66.6666666667%,
-          #00ccf2 83.3333333333%,
-          #b278d3 83.3333333333%,
-          #b278d3 100%
-        );
+        background: rgb(100, 69, 199);
         -webkit-background-clip: text;
         color: transparent;
       }
@@ -89,6 +61,7 @@ export const CityInfo = styled.div`
   flex-direction: column;
   text-align: left;
   margin-top: 0;
+  border-radius: 10px;
 `
 
 export const CityIcon = styled.div`

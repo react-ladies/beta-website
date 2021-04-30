@@ -18,7 +18,7 @@ module.exports = {
         fonts: {
           google: [
             {
-              family: 'Roboto Mono',
+              family: 'Space Mono',
               variants: ['300', '400', '500']
             }
           ]

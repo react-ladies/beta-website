@@ -1,5 +1,6 @@
 import React from 'react'
 import { Nav, LogoWrap, Codelings, Subtitle, NavRow, NavLink, NavHref } from './elements'
+import ReactLogo from './logo'
 
 const Header = ({ siteTitle }) => (
   <Nav>
@@ -13,11 +14,13 @@ const Header = ({ siteTitle }) => (
         font-size: 2px;
       `}
     >
-      QueerJS
+      React Ladies
     </h1>
     <Subtitle>A supportive community for women and non-binary React enthusiasts</Subtitle>
     <NavRow>
-      <LogoWrap>React Ladies</LogoWrap>
+      <LogoWrap>
+        React Ladies <ReactLogo />
+      </LogoWrap>
 
       <ul>
         <li>
@@ -27,7 +30,7 @@ const Header = ({ siteTitle }) => (
           <NavHref
             href="https://opencollective.com/react-ladies"
             target="_blank"
-            title="Donate to QueerJS"
+            title="Donate to React Ladies"
             rel="noopener noreferrer"
           >
             Donate
