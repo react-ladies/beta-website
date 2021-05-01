@@ -1,7 +1,7 @@
 import React from 'react'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
-import Panel, { LargeParagraph } from '../components/Panel'
+import Panel, { LargeParagraph, BoldText } from '../components/Panel'
 import City, { Cities } from '../components/City'
 
 import { isFuture, isToday, parse } from 'date-fns'
@@ -28,9 +28,10 @@ const IndexPage = ({ data: { allEvent } }) => {
       />
       <Panel>
         <LargeParagraph>
-          React Ladies is a supportive community for women and non-binary React enthusiasts with any
-          level of programming experience to grow as technologists and meet other React developers.
-          We center our events around JavaScript and other technologies within the React ecosystem.
+          <BoldText>React Ladies</BoldText> is a supportive community for women and non-binary React
+          enthusiasts with any level of programming experience to grow   as technologists and meet
+          other React developers. We center our events around JavaScript and other technologies
+          within the React ecosystem.
         </LargeParagraph>
       </Panel>
       {futureMeetups.length ? (

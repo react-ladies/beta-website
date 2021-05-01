@@ -4,7 +4,7 @@ info:
   link: online-2021-may
   date: 05/27/2021
   hour: '12:00PM EST'
-  icon: icons/online/online.svg
+  icon: icons/online/react-logo.svg
   # iconHover: icons/online/online-hover.svg
   hostIcon: icons/online/logo_salesloft.svg
   hostName: SalesLoft
