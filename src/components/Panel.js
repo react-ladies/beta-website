@@ -49,7 +49,7 @@ const Panel = ({ heading, children, id, wide = false }) => (
 
 export const LargeParagraph = styled.p`
   font-size: 1.25em;
-  color: ${props => props.theme.lightPurple};
+  color: ${props => props.theme.boldBlue};
 `
 
 export const BoldText = styled.span`

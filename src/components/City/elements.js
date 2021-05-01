@@ -14,7 +14,7 @@ export const Name = styled.h2`
   ${props =>
     props.past &&
     css`
-      color: ${props => props.theme.lightPurple};
+      color: ${props => props.theme.boldBlue};
     `};
   ${props =>
     !props.past &&
@@ -36,7 +36,7 @@ export const Wrapper = styled(Link)`
   align-items: stretch;
   text-decoration: none;
   padding: 0 0 1.5em;
-  border-bottom: 4px solid ${props => props.theme.lightPurple};
+  border-bottom: 4px solid ${props => props.theme.boldBlue};
   justify-content: center;
   flex-direction: column;
   margin-bottom: 4em;
@@ -77,7 +77,7 @@ export const CityIcon = styled.div`
 
 export const MeetupDate = styled.p`
   font-size: 1rem;
-  color: ${props => props.theme.lightPurple};
+  color: ${props => props.theme.boldBlue};
   margin: 0 0 0.5em;
   font-weight: 400;
 `
