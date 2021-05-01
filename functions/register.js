@@ -7,32 +7,29 @@ exports.handler = async function(event) {
 
   if (!name || !city) {
     console.error(err)
-    return
+    return {
+      statusCode: 500,
+      body: `Something went wrong. Double check if you sent a valid name and city.`
+    }
   }
 
   try {
-    await base(process.env.AIRTABLE_TABLE).create(
-      {
+    return await base(process.env.AIRTABLE_TABLE)
+      .create({
         name: name,
         city: city,
         ghLink: github
-      },
-      (err, record) => {
-        if (err) {
-          console.error(err)
-          return
+      })
+      .then(record => {
+        return {
+          statusCode: 200,
+          body: `Successfully added ${event.queryStringParameters.name}. document ID is ${record.id}`
         }
-        console.log(`Human was created, document ID is ${record.getId()}`)
-      }
-    )
-    return {
-      statusCode: 200,
-      body: `Successfully added ${event.queryStringParameters.name}`
-    }
-  } catch (err) {
+      })
+  } catch {
     return {
       statusCode: 500,
-      body: JSON.stringify(err.message)
+      body: `Something went wrong`
     }
   }
 }
