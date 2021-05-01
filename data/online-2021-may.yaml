@@ -8,13 +8,13 @@ info:
   # iconHover: icons/online/online-hover.svg
   hostIcon: icons/online/logo_salesloft.svg
   hostName: SalesLoft
-  rsvpsClosed: true
+  rsvpsClosed: false
   food: false
 site:
   cfp: false
   location: Zoom (link via e-mail)
   googleMapsLink:
-  calendarLink: https://www.google.com/calendar/render?action=TEMPLATE&text=ReactJSLadies+Online&details=Join+us+on+Twitch+for+your+favourite+meetup&location=The+internet&dates=20210330T183000Z%2F20210330T200000Z
+  calendarLink: https://www.google.com/calendar/render?action=TEMPLATE&text=React+Ladies+Kick+Off+Event&details=React+Ladies+is+a+supportive+community+for+women+and+non-binary+React+enthusiasts+with+any+level+of+programming+experience+to+grow+as+technologists+and+meet+other+React+developers.+We+center+our+events+around+JavaScript+and+other+technologies+within+the+React+ecosystem.&location=Online.+You%27ll+receive+the+Zoom+link+via+e-mail.&dates=20210527T162400Z%2F20210527T172400Z
 announcement:
   heading: React Ladies
   text: Join our community of women and non-binary React developers at our upcoming kickoff event!
