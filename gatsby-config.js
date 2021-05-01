@@ -32,7 +32,7 @@ module.exports = {
         tables: [
           {
             baseId: process.env.GATSBY_AIRTABLE_BASE,
-            tableName: `registration`,
+            tableName: process.env.GATSBY_AIRTABLE_TABLE,
             queryName: `attendees` // optional
           }
         ]
