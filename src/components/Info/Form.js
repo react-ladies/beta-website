@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import createRecord from '../../helpers/airtable'
 import { Button, Form } from './elements'
 
 export default ({ onSubmit, city }) => {
@@ -13,18 +12,17 @@ export default ({ onSubmit, city }) => {
     if (name && gh) {
       if (plusOne && !plusOneName) return
 
-      createRecord({
-        city: city,
-        name: name,
-        ghLink: gh || 'react-ladies'
-      })
+      fetch(`/.netlify/functions/register?name=${name}&github=${gh || 'react-ladies'}&city=${city}`)
+        .then(res => res.text())
+        .then(text => console.log(text))
 
       if (plusOne) {
-        createRecord({
-          city: city,
-          name: plusOneName,
-          ghLink: plusOneGH || 'react-ladies'
-        })
+        fetch(
+          `/.netlify/functions/register?name=${plusOneName}&github=${plusOneGH ||
+            'react-ladies'}&city=${city}`
+        )
+          .then(res => res.text())
+          .then(text => console.log(text))
       }
     }
   }

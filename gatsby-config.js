@@ -28,11 +28,11 @@ module.exports = {
     {
       resolve: `gatsby-source-airtable`,
       options: {
-        apiKey: process.env.GATSBY_AIRTABLE_KEY,
+        apiKey: process.env.AIRTABLE_KEY,
         tables: [
           {
-            baseId: process.env.GATSBY_AIRTABLE_BASE,
-            tableName: process.env.GATSBY_AIRTABLE_TABLE,
+            baseId: process.env.AIRTABLE_BASE,
+            tableName: process.env.AIRTABLE_TABLE,
             queryName: `attendees` // optional
           }
         ]
