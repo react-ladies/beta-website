@@ -5,7 +5,7 @@ const base = new Airtable({ apiKey: process.env.GATSBY_AIRTABLE_KEY }).base(
 )
 
 export default doc => {
-  base('all').create(doc, (err, record) => {
+  base('registration').create(doc, (err, record) => {
     if (err) {
       console.error(err)
       return
