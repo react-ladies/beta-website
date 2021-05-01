@@ -40,7 +40,7 @@ export const Logo = styled.img`
 export const LogoWrap = styled.div`
   flex-shrink: 0;
   svg {
-    font-size: 2em;
+    height: 2.5em;
   }
 `
 
