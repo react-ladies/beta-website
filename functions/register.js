@@ -9,22 +9,30 @@ exports.handler = async function(event) {
     console.error(err)
     return
   }
-  base(process.env.AIRTABLE_TABLE).create(
-    {
-      name: name,
-      city: city,
-      ghLink: github
-    },
-    (err, record) => {
-      if (err) {
-        console.error(err)
-        return
+
+  try {
+    await base(process.env.AIRTABLE_TABLE).create(
+      {
+        name: name,
+        city: city,
+        ghLink: github
+      },
+      (err, record) => {
+        if (err) {
+          console.error(err)
+          return
+        }
+        console.log(`Human was created, document ID is ${record.getId()}`)
       }
-      console.log(`Human was created, document ID is ${record.getId()}`)
+    )
+    return {
+      statusCode: 200,
+      body: `Successfully added ${event.queryStringParameters.name}`
     }
-  )
-  return {
-    statusCode: 200,
-    body: `Successfully added ${event.queryStringParameters.name}`
+  } catch (err) {
+    return {
+      statusCode: 500,
+      body: JSON.stringify(err.message)
+    }
   }
 }
