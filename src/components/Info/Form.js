@@ -3,18 +3,24 @@ import { Button, Form } from './elements'
 
 export default ({ onSubmit, city }) => {
   const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
   const [gh, setGH] = useState('')
   const [plusOne, setPlusOne] = useState(false)
   const [plusOneName, setPlusOneName] = useState('')
   const [plusOneGH, setPlusOneGH] = useState('')
+  // TODO: use error to change the front end state, right now it just fails silently if there was an issue persisting the data to Airtable.
+  const [error, setError] = useState(false)
 
   const createUser = () => {
-    if (name && gh) {
+    if (name && email) {
       if (plusOne && !plusOneName) return
 
-      fetch(`/.netlify/functions/register?name=${name}&github=${gh || 'react-ladies'}&city=${city}`)
+      fetch(
+        `/.netlify/functions/register?name=${name}&github=${gh ||
+          'react-ladies'}&city=${city}&email=${encodeURI(email)}`
+      )
         .then(res => res.text())
-        .then(text => console.log(text))
+        .then(text => setError(text.includes('Error')))
 
       if (plusOne) {
         fetch(
@@ -67,25 +73,38 @@ export default ({ onSubmit, city }) => {
           onChange={e => setGH(e.target.value.trim())}
         />
       </label>
-      <label
-        htmlFor="plus-one"
-        css={`
-          display: flex;
-        `}
-      >
+      <label htmlFor="email">
+        E-Mail Address
         <input
-          id="plus-one"
-          type="checkbox"
-          pattern="[a-zA-Z0-9]+"
-          value={plusOne}
-          css={`
-            width: auto !important;
-            margin-right: 12px !important;
-          `}
-          onChange={e => setPlusOne(e.target.checked)}
+          required
+          id="email"
+          type="email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          value={email}
+          onInvalid={e => e.target.setCustomValidity(`Please provide a valid e-mail address.`)}
+          onChange={e => setEmail(e.target.value.trim())}
         />
-        <span>I am taking a plus one</span>
       </label>
+      {/* TODO: PlusOne functionality should only be enabled for in-person events. */}
+      {/*     <label
+                                               htmlFor="plus-one"
+                                               css={`
+                                                 display: flex;
+                                               `}
+                                             >
+                                               <input
+                                                 id="plus-one"
+                                                 type="checkbox"
+                                                 pattern="[a-zA-Z0-9]+"
+                                                 value={plusOne}
+                                                 css={`
+                                                   width: auto !important;
+                                                   margin-right: 12px !important;
+                                                 `}
+                                                 onChange={e => setPlusOne(e.target.checked)}
+                                               />
+                                               <span>I am taking a plus one</span>
+                                        </label>*/}
       {plusOne && (
         <label htmlFor="plus-one-name">
           +1 Name

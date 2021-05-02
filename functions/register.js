@@ -3,9 +3,11 @@ const base = new Airtable({ apiKey: process.env.AIRTABLE_KEY }).base(process.env
 
 exports.handler = async function(event) {
   // ?name=Katherine Johnson&github=nasa&city=online-2021-may
-  const { name, github, city } = event.queryStringParameters
+  const { name, github = 'react-ladies', city, email } = event.queryStringParameters
 
-  if (!name || !city) {
+  console.log('email', decodeURI(email))
+
+  if (!name || !city || !email) {
     console.error(err)
     return {
       statusCode: 500,
@@ -18,7 +20,8 @@ exports.handler = async function(event) {
       .create({
         name: name,
         city: city,
-        ghLink: github
+        ghLink: github,
+        email: decodeURI(email)
       })
       .then(record => {
         return {
@@ -26,10 +29,12 @@ exports.handler = async function(event) {
           body: `Successfully added ${event.queryStringParameters.name}. document ID is ${record.id}`
         }
       })
-  } catch {
+  } catch (err) {
+    const errorMsg = `Error. Something went wrong. Airtable returned: ${err}`
+    console.log(errorMsg)
     return {
       statusCode: 500,
-      body: `Something went wrong`
+      body: errorMsg
     }
   }
 }
