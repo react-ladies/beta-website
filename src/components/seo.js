@@ -47,12 +47,12 @@ function SEO({ description, lang, meta, title }) {
         // {
         //   name: 'twitter:image',
         //   content:
-        //     'https://rawcdn.githack.com/SaraVieira/queerjs/c97e919e49430435a96c2b9193ea814b795acb68/web/src/assets/gayjs.png'
+        //     ''
         // },
         // {
         //   name: 'og:image',
         //   content:
-        //     'https://rawcdn.githack.com/SaraVieira/queerjs/c97e919e49430435a96c2b9193ea814b795acb68/web/src/assets/gayjs.png'
+        //     ''
         // },
         {
           name: 'twitter:site',
@@ -65,12 +65,12 @@ function SEO({ description, lang, meta, title }) {
         // {
         //   name: 'image',
         //   content:
-        //     'https://rawcdn.githack.com/SaraVieira/queerjs/c97e919e49430435a96c2b9193ea814b795acb68/web/src/assets/gayjs.png'
+        //     ''
         // },
         // {
         //   name: 'og:image',
         //   content:
-        //     'https://rawcdn.githack.com/SaraVieira/queerjs/c97e919e49430435a96c2b9193ea814b795acb68/web/src/assets/gayjs.png'
+        //     ''
         // }
       ].concat(meta)}
     />

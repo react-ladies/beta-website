@@ -12,7 +12,7 @@ export default {
       githubLink: 'shaundai'
     },
     {
-      name: 'Adrianna',
+      name: 'Adrianna Valdivia',
       twitterLink: 'driannavaldivia',
       githubLink: 'avaldivi'
     },

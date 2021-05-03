@@ -19,17 +19,33 @@ announcement:
   heading: React Ladies
   text: Join our community of women and non-binary React developers at our upcoming kickoff event!
 mainOrganizer:
-  - name: 'Monica'
+  - name: 'Monica Powell'
     main: true
     phoneNumber: ''
     twitterHandle: indigitalcolor
     githubLink: m0nica
     email: monica@aboutmonica.com
+  - name: 'Shaundai Person'
+    main: false
+    phoneNumber: ''
+    twitterHandle: shaundai
+    githubLink: shaundai
+  - name: 'Adrianna Valdivia'
+    main: false
+    phoneNumber: ''
+    twitterHandle: driannavaldivia
+    githubLink: avaldivi
+  - name: 'Sylwia Vargas'
+    main: false
+    phoneNumber: ''
+    twitterHandle: SylwiaVargas
+    githubLink: SylwiaVargas
+
 organizers:
   - id: ae2d4158-cd43-4196-b88e-cb2afdbf6b4b
-    name: Aveline Estié
-    email: aa.estie@gmail.com
-    twitterHandle: avilene_
+    name: Monica Powell
+    email: monica@aboutmonica.com
+    twitterHandle: m0nica
     githubLink: m0nica
 thanks:
 sponsors:
