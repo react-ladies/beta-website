@@ -39,22 +39,15 @@ export const Logo = styled.img`
 
 export const LogoWrap = styled.div`
   flex-shrink: 0;
-<<<<<<< HEAD
   svg {
     height: 2.5em;
   }
-=======
->>>>>>> repo-a/master
 `
 
 export const Title = styled(Link)`
   font-size: 36px;
   font-family: ${props => props.theme.neutra};
-<<<<<<< HEAD
   color: ${props => props.theme.boldPurple};
-=======
-  color: ${props => props.theme.lightGrey};
->>>>>>> repo-a/master
   letter-spacing: -1.2px;
   text-decoration: none;
 
@@ -90,11 +83,7 @@ export const NavLink = styled(Link)`
 export const Subtitle = styled.h2`
   font-size: 0.8rem;
   font-family: ${props => props.theme.roboto};
-<<<<<<< HEAD
   color: ${props => props.theme.boldBlue};
-=======
-  color: ${props => props.theme.lightPurple};
->>>>>>> repo-a/master
   margin: 0;
   font-weight: 400;
   @media screen and (max-width: 38em) {
@@ -114,11 +103,7 @@ const CodelingsOuter = styled.div`
 `
 const CodelingsInner = styled.div`
   font-family: ${props => props.theme.neutra};
-<<<<<<< HEAD
   color: ${props => props.theme.contrastAqua};
-=======
-  color: ${props => props.theme.contrastPurple};
->>>>>>> repo-a/master
   font-size: 6rem;
   letter-spacing: 0.75em;
   transform: rotate(-3deg);
@@ -134,10 +119,6 @@ const CodelingsInner = styled.div`
 `
 export const Codelings = () => (
   <CodelingsOuter aria-hidden>
-<<<<<<< HEAD
     <CodelingsInner>{`(&& React Ladies ==> React Ladies ==>  && React Ladies ==> )`}</CodelingsInner>
-=======
-    <CodelingsInner>{`~=~>&&<{=$%~%~= >}>[][ ]~=~>&&~ =~>& &<{==>}  ><{  =$$%  ~ =>  }  >[ ]`}</CodelingsInner>
->>>>>>> repo-a/master
   </CodelingsOuter>
 )

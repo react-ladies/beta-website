@@ -34,11 +34,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: 'twitter:creator',
-<<<<<<< HEAD
           content: '@reactjsladies'
-=======
-          content: '@Nikkitaftw'
->>>>>>> repo-a/master
         },
         {
           name: 'twitter:title',
@@ -48,7 +44,6 @@ function SEO({ description, lang, meta, title }) {
           name: 'twitter:description',
           content: description
         },
-<<<<<<< HEAD
         // {
         //   name: 'twitter:image',
         //   content:
@@ -77,36 +72,6 @@ function SEO({ description, lang, meta, title }) {
         //   content:
         //     ''
         // }
-=======
-        {
-          name: 'twitter:image',
-          content:
-            'https://rawcdn.githack.com/SaraVieira/queerjs/c97e919e49430435a96c2b9193ea814b795acb68/web/src/assets/gayjs.png'
-        },
-        {
-          name: 'og:image',
-          content:
-            'https://rawcdn.githack.com/SaraVieira/queerjs/c97e919e49430435a96c2b9193ea814b795acb68/web/src/assets/gayjs.png'
-        },
-        {
-          name: 'twitter:site',
-          content: 'https://queerjs.com'
-        },
-        {
-          name: 'og:url',
-          content: 'https://queerjs.com'
-        },
-        {
-          name: 'image',
-          content:
-            'https://rawcdn.githack.com/SaraVieira/queerjs/c97e919e49430435a96c2b9193ea814b795acb68/web/src/assets/gayjs.png'
-        },
-        {
-          name: 'og:image',
-          content:
-            'https://rawcdn.githack.com/SaraVieira/queerjs/c97e919e49430435a96c2b9193ea814b795acb68/web/src/assets/gayjs.png'
-        }
->>>>>>> repo-a/master
       ].concat(meta)}
     />
   )

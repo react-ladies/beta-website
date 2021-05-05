@@ -15,11 +15,7 @@ import {
 const Speakers = ({ noSpeak, speakers, cfp }) => {
   return (
     <SpeakersGrid>
-<<<<<<< HEAD
       {speakers.map(human => (
-=======
-      {speakers.map((human) => (
->>>>>>> repo-a/master
         <ListItem
           talk={human.talk}
           key={human.twitterLink}
@@ -54,20 +50,12 @@ const Speakers = ({ noSpeak, speakers, cfp }) => {
       ))}
       {cfp && !noSpeak && (
         <li>
-<<<<<<< HEAD
           <UnstyledLink to="/speak" title="Speak at React Ladies">
-=======
-          <UnstyledLink to="/speak" title="Speak at QueerJS">
->>>>>>> repo-a/master
             <SpeakerPhoto>
               <RainbowWithClicker>
                 <CFP>
                   <CFPInner>
-<<<<<<< HEAD
                     <h2>You?</h2> <span>Speak at React Ladies</span>
-=======
-                    <h2>You?</h2> <span>Speak at QueerJS</span>
->>>>>>> repo-a/master
                   </CFPInner>
                 </CFP>
               </RainbowWithClicker>

@@ -29,20 +29,12 @@ export const SpeakerPhoto = styled.div`
   &:hover {
     transform: scale(1.1) rotate(-5deg);
 
-<<<<<<< HEAD
     /* > ${InlineRainbow} {
-=======
-    > ${InlineRainbow} {
->>>>>>> repo-a/master
       opacity: 1;
     }
     > :not(${InlineRainbow}) {
       filter: grayscale(80%);
-<<<<<<< HEAD
     } */
-=======
-    }
->>>>>>> repo-a/master
   }
 `
 

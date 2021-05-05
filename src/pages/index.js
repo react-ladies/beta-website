@@ -1,11 +1,7 @@
 import React from 'react'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
-<<<<<<< HEAD
 import Panel, { LargeParagraph, BoldText } from '../components/Panel'
-=======
-import Panel, { LargeParagraph } from '../components/Panel'
->>>>>>> repo-a/master
 import City, { Cities } from '../components/City'
 
 import { isFuture, isToday, parse } from 'date-fns'
@@ -27,7 +23,6 @@ const IndexPage = ({ data: { allEvent } }) => {
   return (
     <Layout>
       <SEO
-<<<<<<< HEAD
         title={'React Ladies'}
         description={'A supportive community for women and non-binary React enthusiasts'}
       />
@@ -41,29 +36,6 @@ const IndexPage = ({ data: { allEvent } }) => {
       </Panel>
       {futureMeetups.length ? (
         <Panel wide heading="Upcoming Events">
-=======
-        title={'QueerJS'}
-        description={'A meetup for everyone where Queer Speakers take the stage'}
-      />
-      <Panel>
-        <LargeParagraph>
-          QueerJS is a meetup series where everyone is encouraged to attend and support the speakers
-          and the idea, but where all speakers are queer.
-          <br />
-          <br />
-          This meetup exists to give a voice to everyone and to make a safe space where everyone is
-          welcome.
-        </LargeParagraph>
-        <LargeParagraph>
-          Join us! There will be food and stickers{' '}
-          <span role="img" aria-label="Queer Rainbow">
-            🌈
-          </span>
-        </LargeParagraph>
-      </Panel>
-      {futureMeetups.length ? (
-        <Panel wide heading="Upcoming meetups">
->>>>>>> repo-a/master
           <Cities>
             {futureMeetups.map(({ node }) => (
               <City {...node.info} key={node.id} />
@@ -96,26 +68,16 @@ export const query = graphql`
             city
             link
             date
-<<<<<<< HEAD
             # bySeason
-=======
-            bySeason
->>>>>>> repo-a/master
             hour
             hostName
             hour
             icon {
               publicURL
             }
-<<<<<<< HEAD
             # iconHover {
             #   publicURL
             # }
-=======
-            iconHover {
-              publicURL
-            }
->>>>>>> repo-a/master
             hostIcon {
               publicURL
             }
