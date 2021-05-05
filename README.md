@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React Ladies
 
 ## Getting Started
@@ -18,11 +19,27 @@ To install the `netlify-cli` in order to be able to run the registration functio
 npm install -g netlify-cli
 npm i
 npm run start
+=======
+# QueerJS
+
+## Getting Started
+
+To run this site locally,
+
+1. Create a file in the project root called `.env.production` with the contents `GATSBY_AIRTABLE_KEY=somekey`. `somekey` needs to be a valid AirTable API key; if you're part of QueerJS and need the real API key, ask another organizer to give it to you.
+
+2. Run the following in terminal: 
+
+```sh
+npm i
+npm run dev
+>>>>>>> repo-a/master
 ```
 
 or 
 
 ```sh
+<<<<<<< HEAD
 yarn add -g netlify-cli 
 yarn install
 yarn start
@@ -41,5 +58,19 @@ If you'd like to run the site without setting up Netlify functions locally then 
 If you discover any bugs in this site, please [file an issue](https://github.com/react-ladies/website/issues/new).
 
 This website was originally based off of a fork of -> https://github.com/queerjs/website. 
+=======
+yarn install
+yarn run dev
+```
+
+3. Navigate to `http://localhost:8000`.
+
+## Adding a New Meetup City
+
+- Go to data and make a new YAML file for your city
+- Website to make google calendar links: https://decomaan.github.io/google-calendar-link-generator/
+
+If you discover any bugs in this site, please [file an issue](https://github.com/queerjs/website/issues/new).
+>>>>>>> repo-a/master
 
 Thank you ✨

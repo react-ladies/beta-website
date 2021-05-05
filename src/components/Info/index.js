@@ -2,6 +2,11 @@ import React, { useState } from 'react'
 import { format, parse, isPast } from 'date-fns'
 
 import RSVP from './Form'
+<<<<<<< HEAD
+=======
+import Flag from '../icons/flag'
+import Calendar from '../icons/calendar'
+>>>>>>> repo-a/master
 
 import { Info, RsvpButton, Blinker, Bouncer } from './elements'
 
@@ -18,6 +23,10 @@ export default ({ site, city, info, attendeesNumber }) => {
   return (
     <>
       <Info>
+<<<<<<< HEAD
+=======
+        <Flag />
+>>>>>>> repo-a/master
         <span>
           Location:{' '}
           <a href={site.googleMapsLink} target="_blank" title="Location" rel="noopener noreferrer">
@@ -26,6 +35,7 @@ export default ({ site, city, info, attendeesNumber }) => {
         </span>
 
         <span>
+<<<<<<< HEAD
           {info.bySeason ? (
             <p>{info.bySeason}</p>
           ) : (
@@ -34,6 +44,17 @@ export default ({ site, city, info, attendeesNumber }) => {
             </a>
           )}
         </span>
+=======
+          {info.bySeason ?
+            <p>{info.bySeason}</p>
+          :
+            <a href={site.calendarLink} title="Add to Calendar">
+              {info.hour} {format(date, ['Do [of] MMMM '])}
+            </a>
+          }
+        </span>
+        <Calendar />
+>>>>>>> repo-a/master
       </Info>
       {!open ? (
         <RsvpButton

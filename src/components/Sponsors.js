@@ -14,7 +14,11 @@ const Grid = styled.ul`
   }
 
   li {
+<<<<<<< HEAD
     background: ${props => props.theme.boldAqua};
+=======
+    background: ${props => props.theme.white};
+>>>>>>> repo-a/master
     padding: 20px;
     display: flex;
     align-items: center;

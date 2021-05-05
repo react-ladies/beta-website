@@ -4,12 +4,21 @@ import RainbowWithClicker from '../rainbow/RainbowWithClicker'
 import animate from 'animate.css'
 
 export const theme = {
+<<<<<<< HEAD
   offWhite: '#f3fbff',
   contrastAqua: '#7bdff2',
   boldAqua: '#01a7c2',
   boldPurple: '#6445c7',
   boldBlue: '#00178c',
   roboto: 'Space Mono',
+=======
+  darkPurple: '#1E1126',
+  contrastPurple: '#331A42',
+  white: '#FFFFFF',
+  lightGrey: '#e6e2ff',
+  lightPurple: '#EAD6F7',
+  roboto: 'Roboto Mono',
+>>>>>>> repo-a/master
   neutra: 'NeutraText-Bold'
 }
 
@@ -18,6 +27,7 @@ ${otherFont}
 ${animate}
 
 body {
+<<<<<<< HEAD
   font-family: 'Space Mono';
   background: ${props => props.theme.offWhite};
 background-color: #e0e1f2;
@@ -27,6 +37,12 @@ background-attachment: fixed;
 background-size: cover;
     -webkit-font-smoothing: antialiased;
   color:  ${props => props.theme.boldAqua};
+=======
+  font-family: 'Roboto Mono';
+  background: ${props => props.theme.darkPurple};
+    -webkit-font-smoothing: antialiased;
+  color:  ${props => props.theme.white};
+>>>>>>> repo-a/master
   margin: 0;
   box-sizing: border-box;
 }
@@ -36,7 +52,11 @@ background-size: cover;
 }
 
 a {
+<<<<<<< HEAD
   color: ${props => props.theme.boldAqua};
+=======
+  color: ${props => props.theme.white};
+>>>>>>> repo-a/master
 }
 
 html,
